@@ -35,7 +35,7 @@ Project Organization
     ├── README.md          <- The top-level README 
     ├── data
     │   ├── raw            <- Original PTB files 
-    │   ├── wordids        <- Preprocessed PTB word ids
+    │   ├── training_files <- Preprocessed PTB word ids
     │   └── embeddings     <- word embeddings
     │       │                 
     │       ├── fasttext
@@ -50,24 +50,32 @@ Project Organization
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment
     │
     ├── src                <- Source code for use in this project.
+    │   │
     │   ├── __init__.py    <- Makes src a Python module
+    │   │
+    │   ├── main.py        <- main file for training, testing, etc.
+    │   │
+    │   ├── config_ptb.yamp  <- config file, specifying model params
     │   │
     │   ├── data           <- scripts to preprocess data
     │   │   │                 
+    │   │   ├── README.md
     │   │   ├── preprocess_ptb.py
     │   │   └── inverse_dict.py
     │   │
     │   ├── embeddings     <- scripts to train word embeddings
     │   │   │                 
+    │   │   ├── README.md
     │   │   ├── fasttext.py
     │   │   └── word2vec.py
     │   │
     │   ├── models         <- Scripts to train models and then use trained models to make predictions
     │   │   │                 
-    │   │   ├── ptb_basic_model.py 
-    │   │   └── 
+    │   │   └── ptb_basic_model.py
     │   │
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+    │       │                 
+    │       ├── README.md
     │       └── visualize_embeddings.py
     │
     └── 

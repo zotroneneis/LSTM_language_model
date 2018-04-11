@@ -1,0 +1,36 @@
+---
+general:
+    model_name: 'BasicLanguageModel'
+    random_seed: 42
+    x_train: 'lstm_language_model/data/ptb/training_files/ptb.train'
+    x_test: 'lstm_language_model/data/ptb/training_files/ptb.test'
+    x_eval: 'lstm_language_model/data/ptb/training_files/ptb.eval'
+    embedding_file: 
+    vocab_dict: 'lstm_language_model/data/ptb/training_files/vocab_dict'
+    inverse_vocab_dict: 'lstm_language_model/data/ptb/training_files/inverse_vocab_dict'
+    result_dir: 'lstm_language_model/models/checkpoints'
+    tb_dir: 'lstm_language_model/models/tensorboard'
+    logging: 'DEBUG'
+hparams:
+    vocab_size: 10000
+    batch_size: 20
+    n_epochs: 20
+    embedding_dropout: 0.9
+    input_dropout: 0.8
+    recurrent_dropout: 1.0
+    output_dropout: 0.8
+    clip_norm: 5
+    init_lr: 1.0
+    n_hidden: 500
+    embd_size: 200
+    init_scale: 0.05
+    lr_decay: 0.8 
+    max_epoch: 10
+features:
+    variational_dropout: False
+    weight_tying: True
+    embed_drop: True
+    pretrained_embds: False
+train: True
+predict: False
+test: False
