@@ -11,7 +11,7 @@ Motivated by the potential benefits of a system that accelerates the process of 
 
 Data
 ==============================
-The original data used in the thesis is confidential. Therefore, this repository features a version of the code that runs on the Penn Treebank dataset available [here](www.fit.vutbr.cz/~imikolov/rnnlm/simple-examples.tgz).
+The original data used in the thesis is confidential. Therefore, this repository features a version of the code that runs on the Penn Treebank dataset available [here](http:/www.fit.vutbr.cz/~imikolov/rnnlm/).
 
 To run the code you will have to preprocess the data first. Further details on this can be found in the folder *src/data/*
 
