@@ -1,6 +1,5 @@
 LSTM-based language model
 ==============================
-***This repository is still under active development***
 
 This repository contains all code and resources related to my master thesis on the topic
 
